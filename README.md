@@ -43,6 +43,7 @@ A full subtractor is a combinational circuit that performs subtraction involving
 
 
 ## Program:
+~~~
 module exp4a(a,b,diff,borrow);
 input a,b;
 output diff,borrow;
@@ -51,7 +52,8 @@ xor(diff,a,b);
 not(adash,a);
 and(borrow,a,b);
 endmodule
-
+~~~
+~~~
 module exp4b(a,b,c,diff,borrow);
 input a,b,c;
 output diff,borrow;
@@ -64,6 +66,7 @@ and(q,b,c);
 and(r,adash,b);
 or(borrow,p,q,r);
 endmodule
+~~~
 
 ## RTL Schematic:
 <img width="486" alt="exp4adia" src="https://github.com/Divyagitup/Subtractor/assets/134514564/c4007329-1ce9-4bb9-a3f8-718cb99ce26d">
